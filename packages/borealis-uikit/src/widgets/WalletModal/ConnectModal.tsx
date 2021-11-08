@@ -80,7 +80,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
           </Text>
           <Button
             as="a"
-            href="https://docs.pancakeswap.finance/get-started/connection-guide"
+            href="https://doc.aurora.dev/develop/start/metamask"
             variant="subtle"
             width="100%"
             {...getExternalLinkProps()}

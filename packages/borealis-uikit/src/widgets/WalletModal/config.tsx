@@ -13,7 +13,7 @@ const connectors: Config[] = [
   {
     title: "Metamask",
     icon: Metamask,
-    connectorId: ConnectorNames.Injected,
+    connectorId: ConnectorNames.AURORA,
     priority: 1,
   },
   {
@@ -44,7 +44,7 @@ const connectors: Config[] = [
   {
     title: "Binance Chain",
     icon: BinanceChain,
-    connectorId: ConnectorNames.BSC,
+    connectorId: ConnectorNames.Injected,
     priority: 999,
   },
   {

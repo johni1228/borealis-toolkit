@@ -41,19 +41,6 @@ const UserMenuComponent: React.FC<{ variant?: Variant; text?: string; account?: 
     </UserMenuItem>
     <UserMenuItem type="button">Transactions</UserMenuItem>
     <UserMenuDivider />
-    <UserMenuItem type="button" disabled>
-      Dashboard
-    </UserMenuItem>
-    <UserMenuItem type="button" disabled>
-      Portfolio
-    </UserMenuItem>
-    <UserMenuItem as={Link} to="/profile">
-      React Router Link
-    </UserMenuItem>
-    <UserMenuItem as="a" href="https://pancakeswap.finance" target="_blank">
-      Link
-    </UserMenuItem>
-    <UserMenuDivider />
     <UserMenuItem as="button" onClick={noop}>
       <Flex alignItems="center" justifyContent="space-between" width="100%">
         Disconnect
@@ -69,7 +56,7 @@ const GlobalMenuModal: React.FC<ModalProps> = ({ title, onDismiss, ...props }) =
     <Button>This button Does nothing</Button>
   </Modal>
 );
-
+    
 const GlobalMenuComponent: React.FC = () => {
   const [onPresent1] = useModal(<GlobalMenuModal title="Display Settings Modal" />);
   const [onPresent2] = useModal(<GlobalMenuModal title="Global Settings Modal" />);

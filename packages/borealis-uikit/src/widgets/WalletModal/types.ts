@@ -4,7 +4,7 @@ import { SvgProps } from "../../components/Svg/types";
 export enum ConnectorNames {
   Injected = "injected",
   WalletConnect = "walletconnect",
-  BSC = "bsc",
+  AURORA = "Aurora",
 }
 
 export type Login = (connectorId: ConnectorNames) => void;
