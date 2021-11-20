@@ -28,7 +28,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   width: 100%;
   height: ${MENU_HEIGHT}px;
   background-image: ${({theme}) => (theme.nav.background)}; 
-  z-index: 20;
+  z-index: 999;
   transform: translate3d(0, 0, 0);
 `;
 const BodyWrapper = styled.div`
