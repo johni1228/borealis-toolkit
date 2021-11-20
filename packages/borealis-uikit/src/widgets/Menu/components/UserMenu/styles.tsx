@@ -11,8 +11,8 @@ export const UserMenuDivider = styled.hr`
 export const UserMenuItem = styled.button<UserMenuItemProps>`
   align-items: center;
   border: 0;
-  background: transparent;
-  color: ${({ theme, disabled }) => theme.colors[disabled ? "textDisabled" : "textSubtle"]};
+  background-color: rgba(255, 255, 255, 1);
+  color: ${({ theme, disabled }) => theme.colors[disabled ? "textDisabled" : "primary"]};
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   display: flex;
   font-size: 16px;

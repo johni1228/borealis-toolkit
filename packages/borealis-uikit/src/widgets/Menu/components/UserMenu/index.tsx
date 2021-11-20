@@ -21,7 +21,7 @@ const LabelText = styled.div`
   color: ${({ theme }) => theme.colors.primary};
   display: none;
   font-weight: 600;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255, 1);
   border-radius: 8px;
   cursor: pointer;
   display: inline-flex;
@@ -34,7 +34,8 @@ const LabelText = styled.div`
   align-items: center;
   position: relative;
   &:hover {
-    opacity: 0.65;
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: rgba(255,255,255,1);
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
@@ -45,7 +46,7 @@ const LabelText = styled.div`
 `;
 
 const Menu = styled.div<{ isOpen: boolean }>`
-  background-color: black;
+  background-color: rgba(255,255,255,1);
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 16px;
   padding-bottom: 4px;
@@ -166,7 +167,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
     <>
       <StyledUserMenu ref={setTargetRef} {...props}>
         {/* <MenuIcon avatarSrc={avatarSrc} variant={variant} /> */}
-        <LabelText title={text || account}>Ethereum</LabelText>
+        <LabelText title={text || account}>Aurora Network</LabelText>
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
         {/* <ChevronDownIcon color="text" width="24px" /> */}
       </StyledUserMenu> 

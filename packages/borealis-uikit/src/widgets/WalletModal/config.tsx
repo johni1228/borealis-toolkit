@@ -13,7 +13,7 @@ const connectors: Config[] = [
   {
     title: "Metamask",
     icon: Metamask,
-    connectorId: ConnectorNames.AURORA,
+    connectorId: ConnectorNames.Injected,
     priority: 1,
   },
   {
@@ -21,43 +21,6 @@ const connectors: Config[] = [
     icon: WalletConnect,
     connectorId: ConnectorNames.WalletConnect,
     priority: 2,
-  },
-  {
-    title: "Trust Wallet",
-    icon: TrustWallet,
-    connectorId: ConnectorNames.Injected,
-    priority: 3,
-  },
-  {
-    title: "MathWallet",
-    icon: MathWallet,
-    connectorId: ConnectorNames.Injected,
-    priority: 999,
-  },
-  {
-    title: "TokenPocket",
-    icon: TokenPocket,
-    connectorId: ConnectorNames.Injected,
-    priority: 999,
-  },
-
-  {
-    title: "Binance Chain",
-    icon: BinanceChain,
-    connectorId: ConnectorNames.Injected,
-    priority: 999,
-  },
-  {
-    title: "SafePal",
-    icon: SafePal,
-    connectorId: ConnectorNames.Injected,
-    priority: 999,
-  },
-  {
-    title: "Coin98",
-    icon: Coin98,
-    connectorId: ConnectorNames.Injected,
-    priority: 999,
   },
 ];
 
